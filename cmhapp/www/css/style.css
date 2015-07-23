@@ -1,0 +1,75 @@
+/* Empty. Add your own CSS if you like */
+
+/*maillist*/
+
+.maillItem a{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 2px;
+    height: 100%;
+}
+.status {
+    min-width: 24px;
+    float: left;
+}
+.iconsolo-flag {
+    height: 16px;
+    width: 16px;
+    display: block;
+    background: url(../img/mail_flag.png) 0 0 no-repeat;
+    background-size: 100%!important;
+    background-position: 50% 50%;
+}
+.content {
+    margin-left: 24px;
+    font: 16px/1.25 "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.mailTime {
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+}
+.content strong{
+    display: block;
+    overflow: hidden;
+}
+.text-small {
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+.content small{
+    color: #8e8e8e;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+
+}
+
+/*readmail*/
+.mail-header, .mail-title, .mail-content {
+    padding: 5px 5px 5px 10px;
+    border-bottom: inset 1px #d9d9d9;
+    font: 16px/1.25 "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.mail-header p {
+    font-size: 100%;
+    overflow: hidden;
+    font-weight: 400;
+    margin: 0 0 5px;
+}
+.mail-title strong {
+    display: block;
+}
+.mail-title .small{
+    font-weight: 200;
+}
+.mail-content {
+    min-width: 100%;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+    border-bottom: none;
+    line-height: 24px;
+}
+
+

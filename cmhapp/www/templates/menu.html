@@ -1,0 +1,26 @@
+<!-- 导航栏 -->
+<ion-nav-bar class="bar-stable">
+    <!-- 后退按钮，框架自带，通过ui-router记录 -->
+    <ion-nav-back-button class="button-calm">
+    </ion-nav-back-button>
+    <!-- 右边的导航按钮    -->
+    <ion-nav-buttons side="right">
+            <button class="button button-clear button-calm" >
+                退出
+            </button>
+    </ion-nav-buttons>
+</ion-nav-bar>
+
+<!-- 列表视图 -->
+<ion-nav-view name="menuContent"></ion-nav-view>
+
+<!-- footer -->
+<ion-footer-bar align-title="left" class="bar-stable ">
+    <h1 class="title">刚刚加载了{{ "X" }}封邮件</h1>
+    <!-- 写新邮件的按钮 -->
+    <div class="buttons">
+        <button class="button button-calm button-clear 
+            icon ion-ios-compose-outline ">
+        </button>
+    </div> 
+</ion-footer-bar>

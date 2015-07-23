@@ -1,0 +1,40 @@
+<ion-view view-title="邮箱">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-calm" ng-click="edit()">
+            编辑
+         </button>
+    </ion-nav-buttons>
+    <ion-content overflow-scroll="true">
+        <!-- 上拉刷新    -->
+        <ion-refresher
+             pulling-text="Pull to refresh..."
+             on-refresh="doRefresh()">
+        </ion-refresher>
+         <!-- 文件夹内容列表 -->
+        <ion-list show-delete="showDeleteBtn" 
+            show-reorder="showRecorderBtn">
+            <ion-item class="item-icon-left item-icon-right" 
+                ng-repeat="floder in floderlist" 
+                href="#/app/floderlist/{{floder.id}}" >
+                <!-- 删除按钮，由icon-list的show-delete的值决定 -->
+                <ion-delete-button class="ion-android-delete"
+                    ng-click="delete($index)"
+                ></ion-delete-button>
+                <!-- 交换顺序按钮 -->
+                <ion-reorder-button class="ion-navicon"
+                    on-reorder="moveItem(item, $fromIndex, $toIndex)">
+                 </ion-reorder-button>
+
+                <i class="icon ion-ios-email-outline calm"></i>
+                {{ floder.name }}
+                <i class="badge badge-light">{{ "0" }}</i>
+
+                <!-- 选项按钮 -->
+                <ion-option-button class="button-calm button-border
+                button-clear button-large ion-ios-star-outline ">
+                </ion-option-button>
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
